@@ -43,6 +43,8 @@ function About()
                  <motion.div
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
+    
+  onClick={() => setHovered((prev) => !prev)}
       initial={{ backgroundColor: "#fff" }}
       animate={{
         backgroundColor: hovered ? "#004BFF" : "#fff",
@@ -85,7 +87,7 @@ function About()
             </p>
           </motion.div>
         ):<div className='animi_div'>
-            <h1>1</h1></div>
+            <h1>Click Me</h1></div>
         }
       </AnimatePresence>
     </motion.div>
@@ -93,6 +95,7 @@ function About()
                    <motion.div
       onHoverStart={() => setHovered2(true)}
       onHoverEnd={() => setHovered2(false)}
+  onClick={() => setHovered2((prev) => !prev)}
       initial={{ backgroundColor: "#fff" }}
       animate={{
         backgroundColor: hovered2 ? "#004BFF" : "#fff",
@@ -132,7 +135,7 @@ function About()
                     <p>Access to a network of trusted healthcare professionals in your area.</p>
           </motion.div>
         ):<div className='animi_div'>
-            <h1>2</h1></div>
+            <h1>Click Me</h1></div>
         }
       </AnimatePresence>
     </motion.div>
@@ -140,6 +143,8 @@ function About()
                      <motion.div
       onHoverStart={() => setHovered3(true)}
       onHoverEnd={() => setHovered3(false)}
+    
+  onClick={() => setHovered3((prev) => !prev)}
       initial={{ backgroundColor: "#fff" }}
       animate={{
         backgroundColor: hovered3 ? "#004BFF" : "#fff",
@@ -179,7 +184,7 @@ function About()
                     <p>Tailored recommendations and reminders to help you stay on top of your health.</p>
           </motion.div>
         ):<div className='animi_div'>
-            <h1>3</h1></div>
+            <h1>Click Me</h1></div>
         }
       </AnimatePresence>
     </motion.div>
