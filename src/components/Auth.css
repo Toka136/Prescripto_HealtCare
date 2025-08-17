@@ -1,0 +1,120 @@
+.login
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login_cont
+{
+    width: 40%;
+    margin-left: 30%;
+    padding: 10px;
+    border-radius: 10px;
+     box-shadow: 0 4px 7px #5e5e5e;
+     margin-top: 50px;
+}
+.login_cont h3
+{
+    color: #5e5e5e;
+    text-transform: capitalize;
+    font-size: 25px;
+     margin-left: 10%;
+}
+.login_cont form
+{
+    display: flex;
+    flex-direction: column;
+}
+.login_cont form input
+{
+    border: 1px solid;
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
+    /* margin-top: 10px; */
+    margin-left: 10%;
+    color: #5e5e5e;
+}
+.login_cont>p
+{
+    margin-top: 10px;
+
+}
+.login_cont>p a
+{
+    color: #5f6fff !important;
+    text-decoration: underline !important;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.login_cont p
+{
+    margin-bottom: 2px;
+    color: #5e5e5e;
+    margin-left: 10%;
+}
+.login_cont form label
+{
+    text-transform: capitalize;
+    color: #5e5e5e;
+    font-weight: 400;
+     margin-left: 10%;
+     margin-top: 25px;
+}
+.login_cont .bbutton_parent
+{
+    margin-top: 30px;
+}
+.login_cont .bbutton_parent button
+{
+    width: 80%;
+   
+}
+.login_cont > h3 span
+{
+    color: #5f6fff;
+    text-transform: capitalize;
+    /* font-size: 25px; */
+    font-weight: 600;
+}
+
+@media(max-width:910px)
+{
+    .login_cont
+    {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+@media(max-width:610px)
+{
+    .login_cont
+    {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+@media(max-width:510px)
+{
+    .login_cont
+    {
+        width: 75%;
+        margin-left: 12.5%;
+    }
+}
+@media(max-width:410px)
+{
+    .login_cont
+    {
+        width: 90%;
+        margin-left:5%;
+    }
+}
+@media(max-width:370px)
+{
+    .login_cont
+    {
+        width: 100%;
+        margin-left:0%;
+    }
+}

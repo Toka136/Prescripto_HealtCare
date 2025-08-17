@@ -1,0 +1,159 @@
+.appoint_cont
+{
+    width: 80%;
+    margin: 30px 0 0 10%;
+}
+.appoint_cont h4
+{
+    text-transform: capitalize;
+    /* font-size: 18px; */
+    color: #5e5e5e;
+}
+.appoint_cont .appointment
+{
+    padding: 15px ;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.appoint_cont .doc_img
+{
+    display: flex;
+    align-items: center;
+}
+.appoint_cont .doc_img .doct_info 
+{
+    margin-left: 10px;   
+}
+.appoint_cont .doc_img .doct_info  p
+{
+    color: #5e5e5e;
+    text-transform: capitalize;
+}
+.appoint_cont .doc_img .doct_info h5,
+.appoint_cont .doc_img .doct_info span
+{
+    font-weight: 400;
+    color: black;
+     text-transform: capitalize;
+}
+.appoint_cont .doc_img .imgdoc_parent
+{width: 30%;
+    background-color: #eaefff;
+}
+.appoint_cont .doc_img .imgdoc_parent img
+{
+    width: 100%;
+}
+.appoint_cont button
+{
+    color: #5e5e5e;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 80%;
+    margin-left: 20%;
+}
+.appoint_cont .pay
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.appoint_cont .pay button:nth-child(1):hover
+{
+    background-color: #5f6fff;
+    color: white;
+}
+.appoint_cont .pay button:nth-child(2):hover
+{
+    background-color: #dc2626 !important;
+    color: white;
+}
+.appoint_cont >p
+{
+    margin-top: 20px;
+    color: #dc2626;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+}
+.Toastify__toast
+{
+    display: grid !important;
+    grid-template-columns: 20% 70%;
+    flex-direction: row;
+}
+.Toastify__toast button
+{
+    background-color: transparent !important;
+    color: black !important;
+    border:  none !important;
+    width: unset !important;
+}
+@media(max-width:915px)
+{
+    .appoint_cont .appointment
+    {
+        grid-template-columns: 80%;
+    }
+    .appoint_cont .doc_img
+    {
+        align-items: start;
+    }
+    .appoint_cont .pay
+    {
+       flex-direction: row;
+       margin-top: 20px;
+    }
+    .appoint_cont button
+    {
+        margin-left: 10px;
+    }
+}@media(max-width:915px)
+{
+    .appoint_cont .doc_img
+    {
+        flex-direction: column;
+        row-gap: 5px;
+    }
+     .appoint_cont .appointment
+    {
+        grid-template-columns: 100%;
+    }
+    .appoint_cont .doc_img .imgdoc_parent
+    {
+        width: 50%;
+    }
+}
+@media(max-width:525px)
+{
+    .appoint_cont .pay
+    {
+        flex-direction: column;
+    }
+}
+@media(max-width:380px)
+{
+      .appoint_cont .doc_img .imgdoc_parent
+    {
+        width: 70%;
+    }
+    .appoint_cont button
+    {
+        width: 90%;
+    }
+}

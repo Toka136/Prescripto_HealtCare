@@ -1,0 +1,140 @@
+.img_txt
+{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 30% 63%;
+    width: 85%;
+    margin:  40px 0 0px 7%;
+    
+    align-items: center;
+}
+.img_txt img
+{
+        height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.img_txt p
+{
+    margin-bottom: 5px;
+    line-height: 32px;
+    color: #747070;
+}
+.about h1
+{
+    color: #747070;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+.img_txt  span
+{
+    color: black !important;
+    font-weight: 600;
+    font-size: 20px;
+}
+.about .reasons
+{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+.about .reasons > div:nth-child(1)
+{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.about .reasons > div:nth-child(2)
+{
+    border-radius: 0;
+}
+.about .reasons > div:nth-child(3)
+{
+     border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.about h2
+{
+    margin: 60px 0 25px 10%;
+    color: #374151;
+    width: 80%;
+}
+.about h2 span
+{
+    color: black;
+}
+.about .reasons > div
+{
+   border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 1px solid #e5e7eb;
+}
+.animi_div
+{
+     position: relative;
+              z-index: 1;
+              color: #fff;
+              text-align: center;
+              padding: 20px 15px;
+}
+
+.about .reasons > div:hover
+{
+    /* background-color: #5f6fff; */
+    color: white;
+    transition: .3s;
+}
+.about .reasons > div h3
+{
+    font-size: 20px;
+    font-weight: 400;
+     color: #747070;
+}
+.about .reasons > div:hover h3
+{
+    color: white;
+}
+@media (max-width:900px)
+{
+    .about .reasons > div
+    {
+        border-radius: 12px !important;
+    }
+     .about .reasons 
+    {
+        grid-template-columns: 45% 45%;
+        row-gap: 30px;
+    }
+    .img_txt
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+   
+}
+@media (max-width:610px)
+{
+     .about .reasons 
+    {
+        grid-template-columns:70%;
+        row-gap: 30px;
+    }
+}
+@media (max-width:450px)
+{
+     .about .reasons 
+    {
+        grid-template-columns:90%;
+        row-gap: 30px;
+    }
+}

@@ -1,0 +1,196 @@
+.doctor .doc_inf
+{
+    display: grid;
+    grid-template-columns: 30% 63%;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+.doctor .doc_inf .info
+{
+    height: fit-content;
+}
+.doctor .doc_inf .info h1
+{
+    color: #374151;
+    font-size: 25px;
+}
+.doctor .doc_inf .info p:nth-child(4)
+{
+    width: 70%;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 32px;
+      color: #374151;
+}
+.doctor .doc_inf .info p
+{
+    color: #374151;
+    /* font-size: 25px; */
+}
+.doctor .doc_inf .info span
+{
+    font-weight: 400;
+    color: black;
+    text-transform: capitalize;
+}
+.doctor .doc_inf .info
+{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.doctor .doc_inf .dimg_parent
+{
+    background-color: #5f6fff ;
+    border-radius: 5px;
+}
+.doctor .doc_inf .dimg_parent img
+{
+    width: 100%;
+}
+.doctor .bookslots
+{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 40px;
+    /* overflow-x: scroll; */
+}
+.doctor .bookslots .days
+{
+    display: grid;
+    grid-template-columns: repeat(7,12%);
+    justify-content: space-between;
+}
+.doctor .bookslots .days > div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   color: #374151;
+   border: 1px solid #374151;
+    border-radius: 50px;
+    text-transform: uppercase;
+    padding: 30px 15px;
+    width: fit-content;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.actived
+{
+ background-color: #5f6fff !important;
+    color: white !important;
+}
+.doctor .times
+{
+    display: flex;
+    justify-content:center;
+    margin-top: 30px;
+}
+.doctor .times span
+{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #454d59;
+    margin-left: 20px;
+    cursor: pointer;
+}
+ .bbutton_parent
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .bbutton_parent button
+{
+    background-color: #5f6fff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+ .bbutton_parent button:hover
+{
+    background-color: #30398e;
+}
+.bbutton_parent .btn-danger
+{
+    background-color: #bb2d3b !important;
+}
+.bbutton_parent .btn-danger:hover
+{
+    background-color: #6b141d !important;
+}
+@media(max-width:910px)
+{
+    .doctor .bookslots
+    {
+        margin-left: 35%;
+    }
+  .doctor .bookslots .days
+  {
+    display: flex;
+    overflow-x: scroll;
+    width: 60%;
+
+  } 
+  .doctor .bookslots .days > div
+  {
+    width: 33%;
+  }  
+  .doctor .times
+  {
+   flex-wrap: wrap;
+        justify-content: start;
+        row-gap: 10px;
+  }
+  .doctor .doc_inf .info p:nth-child(4)
+  {
+    width: 100%;
+  }
+}
+@media(max-width:785px)
+{
+    .doctor .doc_inf
+    {
+        width: 98%;
+        margin-left: 1%;
+    }
+    .bbutton_parent
+    {
+        justify-content: center;
+    }
+}
+@media(max-width:610px)
+{
+    .doctor .doc_inf
+    {
+        grid-template-columns:70%;
+        align-items: center;
+        justify-content: center;
+    }
+    .doctor .bookslots
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+@media(max-width:470px)
+{
+    .doctor .doc_inf
+    {
+        grid-template-columns:90%;
+        align-items: center;
+        justify-content: center;
+    }
+}

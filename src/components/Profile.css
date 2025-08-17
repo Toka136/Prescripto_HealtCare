@@ -1,0 +1,108 @@
+.profile_cont
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.profile_cont img
+{
+    width: 20%;
+}
+.profile_cont .user_img form
+{
+    margin-top: 30px;
+}
+.profile_cont .user_img form input
+{
+    border: 1px solid;
+    padding: 3px 10px;
+    border-radius: 10px;
+    outline: none;
+}
+.profile_cont  form button,
+.profile_cont  form span
+{
+   background-color: #5f6fff;
+   color: white !important;
+   text-transform: capitalize;
+   cursor: pointer;
+   border-radius: 10px;
+   border: 1px solid #5f6fff;
+   padding: 5px 20px;
+   outline: none;
+   margin-left: 10px;
+}
+.profile_cont   .contact_info button,
+.profile_cont   .contact_info span
+{
+    margin-top: 30px !important;
+}
+.profile_cont  form a ,
+.profile_cont  form span 
+{
+    margin-top: 15px !important;
+    display: inline-block;
+    padding: 5px 35px !important;
+}
+.profile_cont .user_img form button:hover
+{
+    background-color: #3a45a0;
+}
+.profile_cont > div h4
+{
+    margin-top: 20px;
+}
+.profile_cont > div p
+{
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4b5563;
+    margin-top: 30px;
+}
+.profile_cont .contact_info input
+{
+    /* background-color: red; */
+    width: 30%;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    
+}
+.profile_cont .contact_info input[type="date"]
+{
+    width: fit-content;
+}
+.profile_cont .contact_info select
+{
+    /* border: 1px solid ; */margin-left: 20px;
+}
+input:-webkit-autofill {
+  background-color: white !important;
+}
+.profile_cont .contact_info label
+{
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #4b5563;
+}
+
+@media(max-width:675px)
+{
+    .profile_cont img
+    {
+        width: 40%;
+    }
+    .profile_cont .contact_info input
+    {
+        width: fit-content;
+    }
+}
+@media(max-width:376px)
+{
+    .profile_cont form button
+    {
+        margin-top: 15px;
+    }
+}

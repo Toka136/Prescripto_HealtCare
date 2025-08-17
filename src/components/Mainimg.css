@@ -1,0 +1,247 @@
+.mainimg
+{
+    padding: 1px;
+}
+.mainimg .cont
+{
+    width: 80%;
+    margin-left: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #5f6fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+}
+.mainimg .cont .main_info h3
+{
+    color: white;
+    width: 80%;
+    line-height: 45px;
+    
+}
+.mainimg .cont .main_info .txt_photo
+{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.mainimg .cont .main_info .txt_photo p
+{
+    color: white;
+    line-height: 30px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+.mainimg .cont .link_parent
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.mainimg .cont a
+{
+    text-transform: capitalize;
+    border: 1px solid black;
+    padding: 10px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    text-decoration:none ;
+}
+.mainimg .cont a::before,
+.mainimg .cont a::after
+{
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+   
+
+}
+.mainimg .cont a::before
+{
+     left: -25px;
+    
+}
+.mainimg .cont a::after
+{
+     right: -25px;
+   
+}
+.mainimg .cont a:hover
+{
+
+     color: #5f6fff !important;
+     background-color: white !important;
+     border-color: #5f6fff;
+     transition-delay: .5s;
+}
+.mainimg .cont a:hover::before
+{
+    animation-name:moveanimation ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+  
+}
+.mainimg .cont a:hover::after
+{
+    animation-name:moveanimation2 ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+  
+}
+.mainimg .main_img
+{
+  animation-name: img_animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+.mainimg .main_img img
+{
+  width: 100%;
+}
+.book 
+{
+  padding-bottom: 30px;
+}
+.book  .main_img
+{
+  display: flex;
+  justify-content: end;
+  /* height: 80%; */
+  width: 40%;
+}
+@media (max-width:970px)
+{
+  .mainimg .cont
+  {
+    flex-direction: column-reverse;
+    justify-content: center;
+    /* align-items: ; */
+    width: 95%;
+    margin-left: 2%;
+
+  }
+  .mainimg .cont .main_info .txt_photo
+  {
+    margin-top: 10px;
+  }
+  .mainimg .cont .main_info h3
+  {
+    margin-top: 30px;
+  }
+  .book .cont .main_info
+  {
+    width: 100%;
+  }
+      .book .cont .main_info h3 {
+       
+        margin-left: 10% !important;
+    }
+
+}
+@media (max-width:400px)
+{
+  .mainimg .cont
+  {
+    width: 100%;
+    margin-left: 0;
+  }
+  .mainimg .cont .main_info .txt_photo
+  {
+    flex-direction: column;
+  }
+   .book .cont .main_img
+   {
+    width: 90%;
+   }
+     .book .cont .main_info h3 {
+       width: 100%;
+        margin-left: 0% !important;
+    }
+}
+@keyframes moveanimation {
+  0% {
+    left: -25px;
+  }
+  30% {
+    left: 0;
+  }
+  60%
+  {
+    left: 0;
+    width: 110%;
+    height: 110%;
+  }
+  80%
+  {
+    left: 0;
+    width: 110%;
+    height: 110%;
+      
+    border-radius: 0;
+  }
+  100%
+  {
+     left: 0;
+    width: 110%;
+    height: 110%;
+      z-index: -4;
+  }
+}
+@keyframes moveanimation2 {
+  0% {
+    right: -25px;
+  }
+  30% {
+    right: 0;
+  }
+  60%
+  {
+    right: 0;
+    width: 110%;
+    height: 110%;
+  }
+  80%
+  {
+    right: 0;
+    width: 110%;
+    height: 110%;
+      
+    border-radius: 0;
+  }
+  100%
+  {
+     right: 0;
+    width: 110%;
+    height: 110%;
+      z-index: -4;
+  }
+}
+@keyframes img_animation{
+  0%
+  {
+    transform: translateY(0);
+  }
+  45%
+  {
+    transform: translateY(5px);
+  }
+
+  75%
+  {
+    transform: translateY(-5px);
+  }
+  /* 100%
+  {
+    transform: translateY(0px);
+  } */
+}

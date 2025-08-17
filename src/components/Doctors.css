@@ -1,0 +1,176 @@
+.doctors h2
+{
+    text-align: center;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.doctors >p
+{
+    line-height: 32px;
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+}
+.doctors_images
+{
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+    justify-content: space-between;
+    row-gap: 30px;
+
+}
+.doctors_images > div
+{
+    position: relative;
+}
+.doctors_images .animate
+{
+     position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            border-radius: 7px;
+            /* background: conic-gradient(#f44545, #08f199, #08eaff, #ff0895, #f44545); */
+            background-size: 200% 200%;
+            /* animation: rotateGradient 3s linear infinite; */
+            z-index: -3;
+            height: 98%;
+}
+.doctors_images > div > div
+{
+    border-radius: 7px;
+    /* padding: 10px; */
+    background-color: white;
+    /* border: 2px solid #c9d8ff; */
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    height: 96%;
+}
+
+.doctors_images > div:hover
+{
+    transform: translateY(-10px) !important;
+    transition: .5s;
+}
+.doctors_images  > div > div h3
+{
+    font-size: 16px;
+    
+}
+
+.doctors_images  > div > div div  p:nth-child(1)
+{
+    color: #4cc55e;
+    position: relative;
+    text-transform: capitalize;
+   
+    margin: 10px 0 2px 15px;
+}
+.doctors_images  > div > div div  p:nth-child(1)::before
+{
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #4cc55e;
+   left: -13px;
+    top: 30%;
+}
+.doctors_images  > div > div div:nth-child(2)
+{
+   
+    margin-left: 10px;
+    z-index: 3 !important;
+    position: relative;
+    margin-bottom: 20px;
+}
+.doctors_images .img_parent
+{
+    background-color: #eaefff !important;
+    z-index: 3 !important;
+    position: relative;
+    height: 50%;
+}
+.doctors_images .img_parent img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .button_parent
+{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+ .button_parent a
+{
+    padding: 7px 25px;
+    text-decoration: none;
+    /* background-color: #eaefff; */
+    border-radius: 10px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4b5563;
+    cursor: pointer;
+     border: 1px solid black;
+     text-transform: capitalize;
+}
+ .button_parent a:hover
+{
+    background-color: #5f6fff ;
+    color: white !important;
+    border-color: #5f6fff;
+
+ }
+@media(max-width:860px)
+{.doctors >p
+    {
+        width: 45%;
+        margin-left: 27.5%;
+    }
+}
+@media(max-width:815px)
+{
+    .doctors_images
+    {
+        grid-template-columns: repeat(3,30%);
+    }
+    
+}
+@media(max-width:650px)
+{
+    .doctors_images
+    {
+        grid-template-columns: repeat(2,42%);
+    }
+    .doctors >p
+    {
+        width: 65%;
+        margin-left: 17.5%;
+    }
+
+}
+@media(max-width:500px)
+{
+    .doctors_images
+    {
+        grid-template-columns: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+      .doctors >p
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}
