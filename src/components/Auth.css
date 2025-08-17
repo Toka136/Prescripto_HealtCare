@@ -77,7 +77,15 @@
     /* font-size: 25px; */
     font-weight: 600;
 }
-
+.login_cont > p button
+{
+    outline: none;
+    background-color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #5f6fff;
+    border: none;
+}
 @media(max-width:910px)
 {
     .login_cont
